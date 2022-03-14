@@ -1,0 +1,154 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>eCommerce Product Detail</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+	
+	<div class="container">
+		<div class="card bg-white">
+			<div class="container-fluid">
+				<div class="wrapper row ">
+					<div class=" col-md-6 p-4 border-end">
+						
+						<div class="preview-pic tab-content">
+						  <div class="tab-pane active" id="pic-1"><img src="a.jpg" height="200px" width="200px"/></div>
+						  <div class="tab-pane" id="pic-2"><img src="b.jpg" /></div>
+						  <div class="tab-pane" id="pic-3"><img src="c.jpg"/></div>
+						  <!-- <div class="tab-pane" id="pic-4"><img src="http://placekitten.com/400/252" /></div>
+						  <div class="tab-pane" id="pic-5"><img src="http://placekitten.com/400/252" /></div> -->
+						</div>
+						<ul class="preview-thumbnail nav nav-tabs">
+						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="a.jpg" width = "100px" height="100px"/></a></li>
+						  <li><a data-target="#pic-2" data-toggle="tab"><img src="b.jpg" width = "100px" height="100px"/></a></li>
+						  <li><a data-target="#pic-3" data-toggle="tab"><img src="c.jpg" width = "100px" height="100px"/></a></li>
+						  <!-- <li><a data-target="#pic-4" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
+						  <li><a data-target="#pic-5" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li> -->
+						</ul>
+						
+					</div>
+					<div class="details col-md-6">
+						<h3 class="product-title">men's shoes fashion</h3>
+                        <p class="product-description">Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.</p>
+
+						<div class="rating">
+							<h5 class="product-title">select size</h5>
+
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+										<label class="form-check-label" for="flexRadioDefault1">
+										  <span class="text-secondary">Standard Size</span><br>
+										  <span class="text-danger fw-bold">$145.00</span>
+										</label>
+									  </div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+										<label class="form-check-label" for="flexRadioDefault1">
+										  <span class="text-secondary">Standard Size</span><br>
+										  <span class="text-danger fw-bold">$145.00</span>
+										</label>
+									  </div>
+								</div><div class="col-md-4">
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+										<label class="form-check-label" for="flexRadioDefault1">
+										  <span class="text-secondary">Standard Size</span><br>
+										  <span class="text-danger fw-bold">$145.00</span>
+										</label>
+									  </div>
+								</div>
+							</div>
+
+							<div class="row mt-4">
+								<div class="col-md-4">
+									<label for="" class="form-label fw-bold">select add on</label>
+									<select class="form-select" aria-label="Default select example">
+										<option selected>chocolated</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									  </select>
+								</div>
+								<div class="col-md-4">
+									<label for="" class="form-label fw-bold">select add on</label>
+									<select class="form-select" aria-label="Default select example">
+										<option selected>chocolated</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									  </select>
+								</div>
+								<div class="col-md-4">
+									<label for="" class="form-label fw-bold">select add on</label>
+									<select class="form-select" aria-label="Default select example">
+										<option selected>chocolated</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									  </select>
+								</div>
+							</div>
+
+							<div class="row mt-4">
+								<div class="col-md-6">
+									<div class="mb-0">
+										<label for="exampleFormControlInput1" class="form-label fw-bold">Recipient/ Postal Code</label>
+										<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+									  </div>
+								</div>
+								<div class="col-md-6">
+									<div class="mb-0">
+										<label for="exampleFormControlInput1" class="form-label fw-bold">Delivery Date</label>
+										<input type="date" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+									  </div>
+								</div>
+							</div>
+
+						</div>
+
+
+						<div class="action">
+							<button class=" btn btn-default btn-danger btn-lg" type="button">add to cart</button>
+							<!-- <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="mt-3 ">
+					<div class="orange text-white p-4" style = "width: 10rem;">Description</div>
+					<div class="border p-4">
+						<p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vitae explicabo maiores iste cumque illum excepturi debitis animi rem sunt neque accusamus non reiciendis veniam beatae reprehenderit, ea possimus eligendi?</p>
+						<br>
+						<br>
+						<p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, ipsum eligendi? Sequi saepe facilis minima officia, incidunt quibusdam provident voluptas. Facilis similique illum odit reiciendis eveniet asperiores autem vero aperiam.</p>
+						<br>
+						<!-- <ul>
+							<li>orientation</li>
+							<li>all prices</li>
+						</ul> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
