@@ -1,0 +1,153 @@
+body{
+    background-color: #ccc;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+input{
+    margin: 0;
+    padding: 0;
+    padding-left: 8px;
+    border: 0;
+    height: 19px;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    color: #73716f;
+    text-decoration: none;
+}
+.wrapper{
+    width:100%;
+}
+.wrapper>*{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+header{
+    position: relative;
+    background-color: #f4e7de;
+    padding-top: 50px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    margin: 0 20px;
+}
+header ul li:nth-child(3){
+    transform: translateY(-20px);
+
+}
+header .login{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+.login img{
+    display: block;
+    width: 25px;
+}
+.login span{
+    display: inline-block;
+    margin-right: 8px;
+}
+
+
+main{
+    background-color: white;
+    padding: 15px 0 30px 0;
+}
+h2,h3,h4,h5,h6{
+    text-align: center;
+    margin: 10px 0 15px 0;
+}
+.content{
+    width: 100%;
+    max-width: 600px;
+    background-color: #f4e7de;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px  30px;
+}
+.content p{
+    color: #73716f;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.list{
+    margin-top: 30px;
+}
+.list ul{
+    display: flex;
+    justify-content: center;
+}
+.list ul li{
+    width: 150px;
+    margin: 0 40px;
+    border: 1px solid #ccc;
+    padding: 0 15px 30px;
+    box-shadow: -3px 5px 10px #ccc;
+}
+.list ul li p{
+    color: #73716f;
+    font-size: 14px;
+}
+.list ul li h5{
+    color: #ff9886;
+}
+
+footer{
+    background-color: #f4e7de;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.map, .contact{
+    margin: 0 50px;
+}
+.map img{
+    width: 250px;
+}
+footer img{
+    display: block;
+}
+.email img{
+    width: 80px;
+}
+.email{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.markLogo img{
+    width: 60px;
+    margin: 0 auto;
+}
+
+.detail{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.detail .news{
+    margin-right: 35px;
+}
+.detail .news h5{
+    text-align: left;
+    margin: 0;
+}
+.detail .news .new{
+    margin-bottom: 10px;
+}
+.detail .news .new p{
+    font-size: 12px;
+    margin: 0;
+    color: #73716f;
+}
