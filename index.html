@@ -1,112 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css"/>
-   
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="contact.css" />
+
     <title>Geranium Flower Shop</title>
+
+
   </head>
 
-  <nav>
-      <li><a href="">BOUQUETS</a></li>
-   <li><a href="">ABOUT US</a></li>
-   <li><a href="">CONTACT U</a></li>
-   <li><a href="">FAQs</a></li>
-  </nav>
+
+  <div class="nav">
+
+    <div class="nav-centered">
+      <a href="index.html" title="Home page"><img src="images\logo1.png" alt="ACME Inc."></a>
+    </div>
+
+  <div class="nav-left">
+    <a href="product.html">BOUQUETS</a>
+    <a href="about.html">ABOUT US</a>
+  </div>
+
+    <div class="nav-right">
+      <a href="contact.html">CONTACT US</a>
+      <a href="">FAQs</a>
+    </div>
   
+  </div>
+
   <body>
+    
+    <div class="hero_img-container">
+      <form class="hero_form">
 
-      <div class="hero_img-container">
-          <form class="hero_form">
-              <label for="date">Date</label>
-              <input type="date" required id="date" name="date" placeholder="Date">
-              <lable for="Location">Location</lable>
-              <input type="text" id="location" name="location" placeholder="Location">
-              <label for="occasion">Occasion</label>
-              <input type="text" id="occasion" name="occasion" placeholder="Occasion">
-              <input type="submit" value="Get Gifts">
-          </form>
+        <label for="date"></label>
+        <input type="date" autofocus required id="date" name="date" placeholder="Date" />
+
+        <lable for="Location"></lable>
+        <input type="text" id="location" name="location" placeholder="Location" />
+
+        <label for="occasion"></label>
+        <input type="text" id="occasion" name="occasion" placeholder="Occasion" />
+
+        <input class="hero-button" type="submit" value="Get Gifts" />
+      </form>
+    </div>
+
+
+    <!-- mid-section with slideshow and Arrangements -->
+<div class="float-container">
+
+      <div class="float-child">
+
+        <div id="slideshow">
+<div class="slides">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images\1.png" style="width: 50%" />
+            <div class="text">Caption Text</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images\2.jpg" style="width: 50%" />
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images\3.jpg" style="width: 50%" />
+            <div class="text">Caption Three</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
       </div>
+    </div>
+    </div>
 
-<div class="parent">
-  <div class="child">
-    <div class="slideshow-container">
-
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="images\1.png" style="width:50%">
-          <div class="text">Caption Text</div>
+    <div class="float-child">
+       <div class="arrangments">
+      <div class="section-container">
+        <div
+          class="columns image"
+          style="background-image: url('../images/4.jpg')">
+          &nbsp;
         </div>
-      
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="images\2.jpg" style="width:50%">
-          <div class="text">Caption Two</div>
+        <div class="columns content">
+          <div class="content-container">
+            <h5>Bouquets</h5>
+            <p>Starting at $20.00</p>
+          </div>
         </div>
-      
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="images\3.jpg" style="width:50%">
-          <div class="text">Caption Three</div>
-        </div>
-      
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
+      <div class="section-container">
+        <div class="columns content">
+          <div class="content-container">
+            <h5>Arrangements</h5>
+            <p>Starting at $50.00</p>
+          </div>
+        </div>
+        <div
+          class="columns image"
+          style="background-image: url('../images/5.jpg')"
+        >
+          &nbsp;
+        </div>
+      </div>
+      <div class="section-container">
+        <div class="columns image"style="background-image: url('../images/6.jpg')">
+          &nbsp;
+        </div>
+        <div class="columns content">
+          <div class="content-container">
+            <h5>
+              Custom Orders
+            </h5>
+            <p>Create Your Own</p>
+          </div>
+        </div>
+      </div>
+       </div>
+
+
+</div>   
+</div>
+
+
+<!-- faqs section -->
+
+    <div class="faqs">
+      <h1>FAQS</h1>
+      <h2>Here's some of our frequantly asked questions.</h2>
       <br>
-      
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+      <div>
+        <button class="questions">here's question</button>
+        <div class="questions_content">
+          <p>Here is answer to question</p>
+        </div>
       </div>
-</div>
-</div>
-<div class="child">
-<div class="section-container">
-  <div class="columns image" style="background-image:url('../images/4.jpg')">
-     &nbsp;
-  </div>
-  <div class="columns content">
-     <div class="content-container">
-        <h5>Bouquets</h5>
-        <p>
-           Starting at $20.00
-        </p>
-     </div>
-  </div>
-</div>
-<div class="section-container">
-  <div class="columns content">
-     <div class="content-container">
-        <h5>Arrangements</h5>
-        <p>
-           Starting at $50.00
-        </p>
-     </div>
-  </div>
-  <div class="columns image" style="background-image:url('../images/5.jpg')">
-     &nbsp;
-  </div>
-</div>
-<div class="section-container">
-  <div class="columns image" style="background-image:url('../images/6.jpg')">
-     &nbsp;
-  </div>
-  <div class="columns content">
-     <div class="content-container">
-        <h5>Custom <br> Orders</h5>
-        <p></p>
-     </div>
-  </div>
-  </div>
-</div>
 
+      <div>
+         <button class="questions">here's question 1</button>
+         <div class="questions_content">
+           <p>Here is answer to question 1</p>
+         </div>
+       </div>
+ 
+       <div>
+         <button class="questions">here's question 2</button>
+         <div class="questions_content">
+           <p>Here is answer to question 2</p>
+         </div>
+       </div>
+
+       <div>
+         <button class="questions">here's question 3</button>
+         <div class="questions_content">
+           <p>Here is answer to question 3</p>
+         </div>
+       </div>
+
+      </div>
   </body>
+
+  <footer>
+   <div class="map">
+       <div class="mapouter">
+           <div class="gmap_canvas">
+               <iframe width="390" height="245" id="gmap_canvas" src="https://maps.google.com/maps?q=108%20University%20Ave,%20Waterloo,%20ON%20N2J%202W2,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+           </div>
+       </div>
+
+
+   </div>
+
+   <div>
+       <ion-icon class="social-icon" name="location-outline"></ion-icon>
+       <h3>Location </h3>
+       <p>108 University Ave, Waterloo, ON N2J 2W2</p>
+
+       <ion-icon class="contact-icon" name="call-outline"></ion-icon>
+       <h3>Contacts Us</h3>
+       <p>+1 2234890600</p>
+   </div>
+
+   <div>
+       <ion-icon class="clock-icon" name="workhours-outline"></ion-icon>
+       <h3>Store Hours</h3>
+       <p>Mon- Fri: 8am To 6pm<br> Sat: 9am To 4pm<br> Sun: Close</p>
+   </div>
+
+   <div class="social">
+       <h3>Social accounts</h3>
+       <a href="#instagram">
+           <div class="social-item">
+               <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+               Instagram
+           </div>
+       </a>
+       <a href="#facebook">
+           <div class="social-item">
+               <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+               Facebook
+           </div>
+       </a>
+   </div>
+</footer>
+
   <script src="script.js"></script>
 </html>

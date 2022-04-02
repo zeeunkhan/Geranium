@@ -2,10 +2,10 @@
 @import url("http://fonts.cdnfonts.com/css/magazine"); /* font-family: 'Magazine', sans-serif; */
 @import url("http://fonts.cdnfonts.com/css/champagne-limousines"); /* font-family: 'Champagne & Limousines', sans-serif; */
 
-*
-{
-padding:0;
-margin:0;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -13,11 +13,84 @@ html {
 }
 
 body {
-  overflow-x:hidden;
+  overflow-x: hidden;
   height: 100%;
+  display: block;
 }
 
-nav {
+/* nav */
+.nav {
+  position: relative;
+  background-color: #F0E2D6;
+  border: 2px solid rgba(122, 93, 98, 0.377);
+  overflow: hidden;
+height: 5em;
+top: 0;
+
+}
+
+.nav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav a.active {
+  background-color: #2f4433;
+  color: white;
+}
+
+.nav-centered a {
+  float: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.nav-right {
+float: right;
+margin-right: 30%;
+font-size: 25px;
+font-family: 'Vogue', sans-serif;
+font-weight: bolder;
+position: static;
+}
+.nav-left {
+  margin-left: 30%;
+  margin-top: 40px;
+  font-size: 25px;
+font-family: 'Vogue', sans-serif;
+font-weight: bolder;
+position: static;
+
+  }
+
+@media screen and (max-width: 500px) {
+  .nav a, .nav-right {
+    float: none;
+    display: block;
+    position: static;
+  }
+
+  .nav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+
+/* nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -27,25 +100,54 @@ nav {
   position: sticky;
   top: 0;
   font-family: "Vogue", sans-serif;
+  
+} */
+h1 {
+  font-family: "Magazine", sans-serif;
+}
+h2 {
+  font-family: "Champagne & Limousines", sans-serif;
+  font-size: 1em;
 }
 
-li {
-  float: left;
+
+/* The hero image */
+.hero_img-container {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.589)),
+    url("../images/hero_img.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-li a {
-  display: block;
+/* Place text in the middle of the image */
+.hero_form  {
+  font-family: "Champagne & Limousines", sans-serif bold;
+  font-size: 16px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
+  background-color: #666666bb;
+  padding: 25px 10px;
+  line-height: 20px;
+  width: 50em;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
+.hero-button {
+  font-size: 16px;
+  padding: 6px 28px;
 
+}
 input[type="date"]::before {
   content: attr(placeholder);
   position: absolute;
@@ -66,49 +168,26 @@ input[type="date"]:valid::before {
   content: "";
 }
 
-
-/* The hero image */
-.hero_img-container {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/joanna-kosinska-xHDOokMbumY-unsplash.jpg");
-
-  /* Set a specific height */
-  height: 50%;
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-/* Place text in the middle of the image */
-.hero_form {
-  font-family: "Champagne & Limousines", sans-serif;
-  text-align: center;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-* {box-sizing:border-box}
-
 /* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+#slideshow {
+  width:100%;
+  height:500px;
+  position:relative;
+  overflow:hidden;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+  width:400%;
+  height:auto;
+  /* position:relative; */
+
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -121,17 +200,18 @@ input[type="date"]:valid::before {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-}
+} */
 
 /* Position the "next button" to the right */
-.next {
+ .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}
+} 
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -166,7 +246,8 @@ input[type="date"]:valid::before {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -179,21 +260,30 @@ input[type="date"]:valid::before {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-/*for image and catagory*/
+/* for image and catagory*/
 .section-container {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
 }
 .section-container .columns {
   flex: 0 0 auto;
@@ -205,19 +295,22 @@ input[type="date"]:valid::before {
   background-size: cover;
 }
 .section-container .columns.content .content-container {
-  padding: 40px 50px;
+  padding: 40px 40px;
+  /* border: blue 3px solid; */
 }
 .section-container .columns.content .content-container h5 {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 1rem;
   margin-bottom: 20px;
+  font-family: 'Magazine', sans-serif;
+
 }
 .section-container .columns.content .content-container p {
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 20px;
   margin-bottom: 15px;
-  text-align: justify;
+  font-family: 'Champagne & Limousines', sans-serif;
 }
 @media screen and (max-width: 767px) {
   .section-container {
@@ -237,20 +330,72 @@ input[type="date"]:valid::before {
   .section-container .columns.content .content-container {
     padding: 20px 35px;
   }
-  .section-container .columns.content .content-container h5 {
+  .section-container .columns.content .content-container {
     margin-bottom: 5px;
   }
 }
 
-.parent {
-  border: 1px solid black;
-  margin: 1rem;
-  padding: 2rem 2rem;
-  text-align: center;
-}
-.child {
+/*mid-section with slideshow and arrangements*/
+
+/* .arrangements {
   display: inline-block;
-  border: 1px solid red;
+  border: 5px solid red;
   padding: 1rem 1rem;
-  vertical-align: middle;
+  height: auto;
+} */
+
+.float-container {
+  border: 3px solid rgb(255, 255, 255);
+  padding: 20px;
+  display: block;
+}
+
+
+.float-child {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  /* border: 2px solid red; */
+}
+
+/*faqs*/
+.faqs {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40em;
+  text-align: center;
+  /* border:rgba(0, 0, 0, 0.5) solid; */
+}
+
+
+.questions {
+  background-color: #314331;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.active,
+.questions:hover {
+  background-color: #415541;
+}
+
+.questions_content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+  border-bottom: rgb(207, 207, 207) solid 1px;
+  border-left: rgb(207, 207, 207) solid 1px;
+  border-right: rgb(207, 207, 207) solid 1px;
+  box-shadow: rgba(128, 128, 128, 0.507) 0.5px 1.5px;
+  text-align: left;
 }

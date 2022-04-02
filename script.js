@@ -35,3 +35,19 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+/* faqs collapse*/
+var coll = document.getElementsByClassName("questions");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var questions_content = this.nextElementSibling;
+    if (questions_content.style.maxHeight){
+      questions_content.style.maxHeight = null;
+    } else {
+      questions_content.style.maxHeight = questions_content.scrollHeight + "px";
+    } 
+  });
+}
