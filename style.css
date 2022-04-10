@@ -153,7 +153,7 @@ position: absolute;
 .hero_img-container {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.247)),
-    url("../images/hero_img.jpg");
+    url("images\hero_img.jpg");
   height: 60%;
   background-position: center;
   background-repeat: no-repeat;
