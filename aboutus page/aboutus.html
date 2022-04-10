@@ -6,9 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./aboutus.css">
+    <link rel="stylesheet" href="navfooter.css">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+/>
+
 </head>
+
+<nav class="navbar">
+   
+    <div id="logo">
+      <a href="../index.html"><img src="logo1.png"/></a>
+    </div>
+    
+    <a href="#" class="toggle-button"> 
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span></a>
+
+    <ul class="links">
+      <li><a href="../pro_menu.html">BOUQUETS</a></li>
+      <li><a href="../aboutus page\aboutus.html">ABOUT US</a></li>
+      <li><a href="../Contact page\contact.html">CONTACT US</a></li>
+      <li><a href="../#faqs">FAQs</a></li>
+    </ul>
+
+    <div>
+      <div class="navicons">
+        <a href="cart.html">
+          <span
+            style="
+              padding: 100 100;
+              position: absolute;
+              top: 1rem;
+              right: 15px;
+              color: #00000091;
+              font-size: 25px;
+            "
+            class="icon"
+            ><i class="fa-solid fa-user"></i
+          ></span>
+          <span
+            style="
+              padding: 100 100;
+              position: absolute;
+              right: 45px;
+              top: 1rem;
+              color: #00000091;
+              font-size: 25px;
+            "
+            class="icon"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></span>
+        </a>
+      </div>
+    </div>
+    
+  </nav>
+
 <body>
-    <div class="wrapper">
+    <!-- <div class="wrapper">
         <header>
             <div class="header">
                 <ul>
@@ -24,7 +87,7 @@
                 <span><img src="./img/mark2.png" alt=""></span>
                 <span><img src="./img/car.png" alt=""></span>
             </div>
-        </header>
+        </header> -->
 
         <main>
             <h3>ABOUT US</h3>
@@ -54,8 +117,8 @@
                 </ul>
             </div>
         </main>
-
-        <footer>
+         
+        <!-- <footer>
             <div class="map">
                 <img src="./img/map.png" alt="">
             </div>
@@ -92,7 +155,85 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
     </div>
 </body>
+<footer class="footerholder">
+    <div class="mapouter">
+      <div class="gmap_canvas">
+        <iframe
+          width="390"
+          height="245"
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?q=108%20University%20Ave,%20Waterloo,%20ON%20N2J%202W2,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+        ></iframe>
+      </div>
+    </div>
+
+    <table id="footer-info-tbl">
+      <tr>
+        <th>Location</th>
+        <th>Store Hours</th>
+      </tr>
+      <tr>
+        <td>
+          108 University Ave<br />
+          Waterloo,ON N2J 2W2
+        </td>
+        <td>
+          Mon- Fri: 8am To 6pm<br />
+          Sat: 9am To 4pm<br />
+          Sun: Close
+        </td>
+      </tr>
+      <tr>
+        <th>Contact Us</th>
+      </tr>
+      <tr>
+        <td>+1 2234890600</td>
+      </tr>
+    </table>
+
+    <div class="snd-section">
+      <div id="newsletter">
+        <div class="container">
+          <div class="left">
+            <h3>Join Our Newsletter!</h3>
+          </div>
+          <form>
+            <input
+              type="text"
+              class="newsletteremail"
+              name="email"
+              placeholder=" Your Email"
+            />
+            <input type="submit" class="newsletterbtn" value="Subscribe" />
+          </form>
+          <ul class="socials">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+<script> 
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+    </script>
+
 </html>

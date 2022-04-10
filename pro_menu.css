@@ -1,6 +1,6 @@
-body{
+/* body{
     background-color: #f4e7de;
-}
+} */
 *{
     margin: 0;
     padding: 0;
@@ -123,7 +123,7 @@ h2,h3,h4,h5,h6{
     margin-left: 40px;
 }
 /*----- footer------ */
-footer{
+/* footer{
     background-color: #f4e7de;
     display: flex;
     justify-content: center;
@@ -170,4 +170,244 @@ footer img{
     font-size: 12px;
     margin: 0;
     color: #73716f;
-}
+} */
+
+nav {
+    /* width: 90%;  */
+    margin: auto;
+    top: 0;
+    /* position: sticky; */
+    background-color: #f0e2d6;
+    overflow: hidden;
+    /* opacity: 0.8;
+    box-shadow: 0 4px 10px -2px rgba(0,0,0,0.1);
+    z-index: 0; */
+  }
+  
+  #logo {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .logo ul {
+    list-style-type: none !important;
+  }
+  
+  .links {
+    text-align: center;
+    font-weight: 900;
+    font-family: "Vogue", sans-serif;
+    letter-spacing: 3px;
+    padding-bottom: 3px;
+  }
+  
+  .links li {
+    display: inline;
+    color: #000000;
+    text-align: center;
+    padding: 5px 16px;
+    font-size: 20px;
+  }
+  .links li a:hover,
+  a:visited,
+  a:link,
+  a:active {
+    color: #000000;
+    text-decoration: none !important;
+    list-style-type: none;
+  }
+  
+  .links li a:hover,
+  a:active {
+    color: green;
+     text-shadow: 1px 1px 2px rgba(128, 0, 128, 0.342);
+  }
+  
+  .toggle-button {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #00000091;;
+    border-radius: 10px;
+  }
+  @media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: white;
+    }
+  
+    .toggle-button {
+        display: flex;
+    }
+  
+    .links {
+        display: none;
+        width: 100%;
+    
+    }
+  
+    .links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+  
+    .links ul li {
+        text-align: center;
+    }
+  
+    .links ul li a {
+        padding: .5rem 1rem;
+    }
+  
+    .links.active, .links li a:hover {
+      background-color: #e1e3e6;
+      border: none;
+      color: rgb(49, 27, 27);
+        display: flex;
+    }
+  }
+  
+  /*footer*/
+  
+  .footerholder {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+  margin-top: 2vw;
+  padding: 1vw 5vw;
+  background-color: #40403f;
+    display: flex;
+  }
+  
+  footer{
+    position: relative;
+  margin-top: 2vw;
+  padding: 1vw 5vw;
+  background-color: #40403f;
+    display: flex;
+  }
+  
+  .map {
+    width: 40px;
+    display: flex;
+    padding: 15px;
+  }
+  
+  .map div:nth-child(2) {
+    margin: 0px 10px;
+  }
+  
+  .snd-section {
+  position: relative;
+  left: 10vw;
+  }
+  
+  .socials li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 1vw;
+  }
+  
+  .socials li i{
+  color:#b7a2a2;
+  display: flex;
+  font-size: 2.1rem;
+  height: 40px;
+  padding-top: 10px;
+  }
+  
+  
+  #newsletter{
+  position: relative;
+  top: 2vw;
+  left: 1vw;
+  /* width: 40vw; */
+  background: none repeat scroll 0% 0%;
+  }
+  
+  #newsletter h3{
+  color: #ddc5c5;  
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
+  margin: 10px 0px;
+  }
+  .socials a {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  }
+  #newsletter form .newsletteremail {
+    font-family: Open Sans;
+  border: none;
+    font-size: 1vw;
+    padding: 1vw 2vw;
+    border-radius: 3px;
+    width: 20vw;
+  }
+  #newsletter form .newsletterbtn {
+  outline: none;
+  border: none;
+  padding: 1vw 2vw;
+  border-radius: 3px;
+  color: #fff;
+  background: #606366;
+  cursor: pointer;
+  }
+  
+  
+  
+  #footer-info-tbl {
+  border-collapse: separate;
+  border-spacing: 1vw;
+  position: relative;
+  left: 20px;
+  text-align: center;
+  /* border:#000000 solid 4px; */
+  }
+  footer th {
+  text-decoration: underline rgb(157, 145, 145);
+  font-size: 23px;
+  color: #cc9292;
+  padding-top: 25px;
+  }
+  
+  
+  footer td {
+  text-align: center;
+  line-height: 19px;
+  color: #e5d4d4;
+  }
+  
+  footer p{
+  color:#cc9292;
+  text-align: center;
+  margin-top: 2vw;
+  }
+  
+  .copyright {
+  position: absolute;
+  font-size: 0.9em;
+  text-align: center;
+  margin: 0;
+  bottom:0;
+  }
+  
