@@ -1,13 +1,21 @@
+@import url("http://fonts.cdnfonts.com/css/vogue");
+@import url("http://fonts.cdnfonts.com/css/magazine"); /* font-family: 'Magazine', sans-serif; */
+@import url("http://fonts.cdnfonts.com/css/champagne-limousines"); /* font-family: 'Champagne & Limousines', sans-serif; */
+h1{
+  font-family: "Magazine", sans-serif;
+}
+h2 {
+    font-family: "Champagne & Limousines", sans-serif;
+}  
+body{
+  font-family: 'Times New Roman', Times, serif;
+}
+
 nav {
-  /* width: 90%;  */
   margin: auto;
   top: 0;
-  /* position: sticky; */
   background-color: #f0e2d6;
   overflow: hidden;
-  /* opacity: 0.8;
-  box-shadow: 0 4px 10px -2px rgba(0,0,0,0.1);
-  z-index: 0; */
 }
 
 #logo {
@@ -27,7 +35,9 @@ nav {
   font-weight: 900;
   font-family: "Vogue", sans-serif;
   letter-spacing: 3px;
-  padding-bottom: 3px;
+  margin-bottom: 0px;
+  font-weight: 900;
+  font-size: 20px;
 }
 
 .links li {
@@ -163,7 +173,6 @@ padding-top: 10px;
 position: relative;
 top: 2vw;
 left: 1vw;
-/* width: 40vw; */
 background: none repeat scroll 0% 0%;
 }
 
@@ -253,7 +262,7 @@ bottom:0;
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
 .arrangements-container .columns.content{
     flex: 100%;
     max-width: 100%;
