@@ -1,319 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
 
     <title>Geranium Flower Shop</title>
-  </head>
+</head>
 
-  <nav class="navbar">
-   
+<nav class="navbar">
+
     <div id="logo">
-      <a href="index.html"><img src="images\logo1.png" /></a>
+        <a href="index.html"><img src="images\logo1.png" /></a>
     </div>
-    
-    <a href="#" class="toggle-button"> 
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span></a>
+
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span></a>
 
     <ul class="links">
-      <li><a href="pro_menu.html">BOUQUETS</a></li>
-      <li><a href="aboutus page\aboutus.html">ABOUT US</a></li>
-      <li><a href="Contact page\contact.html">CONTACT US</a></li>
-      <li><a href="#faqs">FAQs</a></li>
+        <li><a href="pro_menu.html">BOUQUETS</a></li>
+        <li><a href="aboutus page\aboutus.html">ABOUT US</a></li>
+        <li><a href="Contact page\contact.html">CONTACT US</a></li>
+        <li><a href="#faqs">FAQs</a></li>
     </ul>
 
     <div>
-      <div class="navicons">
-        <a href="cart.html">
-          <span
-            style="
+        <div class="navicons">
+            <a href="cart.html">
+                <span style="
               padding: 100 100;
               position: absolute;
               top: 1rem;
               right: 15px;
               color: #00000091;
               font-size: 25px;
-            "
-            class="icon"
-            ><i class="fa-solid fa-user"></i
+            " class="icon"><i class="fa-solid fa-user"></i
           ></span>
-          <span
-            style="
+                <span style="
               padding: 100 100;
               position: absolute;
               right: 45px;
               top: 1rem;
               color: #00000091;
               font-size: 25px;
-            "
-            class="icon"
-            ><i class="fa-solid fa-cart-shopping"></i
+            " class="icon"><i class="fa-solid fa-cart-shopping"></i
           ></span>
-        </a>
-      </div>
+            </a>
+        </div>
     </div>
-    
-  </nav>
 
-  <body>
+</nav>
+
+<body>
     <div class="hero_img-container">
-      <h1>FIND YOUR PERFECT GIFT</h1>
-      <form class="hero_form">
-        <label for="date"></label>
-        <input
-          type="date"
-          autofocus
-          required
-          id="date"
-          name="date"
-          placeholder="Date"
-        />
+        <h1>FIND YOUR PERFECT GIFT</h1>
+        <form class="hero_form">
+            <label for="date"></label>
+            <input type="date" autofocus required id="date" name="date" placeholder="Date" />
 
-        <lable for="Location"></lable>
-        <input
-          type="text"
-          id="location"
-          name="location"
-          placeholder="Location"
-        />
+            <lable for="Location"></lable>
+            <input type="text" id="location" name="location" placeholder="Location" />
 
-        <label for="occasion"></label>
-        <input
-          type="text"
-          id="occasion"
-          name="occasion"
-          placeholder="Occasion"
-        />
+            <label for="occasion"></label>
+            <input type="text" id="occasion" name="occasion" placeholder="Occasion" />
 
-        <input
-          class="hero-button"
-          type="button"
-          value="Get Gifts"
-          formaction="pro_menu.html"
-        />
-      </form>
+            <input class="hero-button" type="submit" value="Get Gifts" formaction="pro_menu.html" />
+        </form>
     </div>
 
     <!-- mid-section with slideshow and Arrangements -->
     <div class="float-container">
-      <div class="float-child left">
-        <div class="slideshow">
-          <div class="slides">
-            <div class="mySlides fade">
-              <div class="numbertext"></div>
-              <img src="images\1.jpg" style="width: 50%; height: 100%" />
-            </div>
+        <div class="float-child left">
+            <div class="slideshow">
+                <div class="slides">
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="images\1.jpg" style="width: 50%; height: 100%" />
+                    </div>
 
-            <div class="mySlides fade">
-              <div class="numbertext"></div>
-              <img src="images\2.jpg" style="width: 50%; height: 100%" />
-            </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="images\2.jpg" style="width: 50%; height: 100%" />
+                    </div>
 
-            <div class="mySlides fade">
-              <div class="numbertext"></div>
-              <img src="images\3.jpg" style="width: 50%; height: 100%" />
-            </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="images\3.jpg" style="width: 50%; height: 100%" />
+                    </div>
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-            <div style="text-align: center">
-              <span class="dot" onclick="currentSlide(1)"></span>
-              <span class="dot" onclick="currentSlide(2)"></span>
-              <span class="dot" onclick="currentSlide(3)"></span>
+                    <div style="text-align: center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
 
-      <div class="float-child right">
-        <div>
-          <div class="arrangements-container">
-            <div
-              class="columns image"
-              style="background-image: url('images/4.jpg')"
-            >
-              &nbsp;
-            </div>
+        <div class="float-child right">
+            <div>
+                <div class="arrangements-container">
+                    <div class="columns image" style="background-image: url('images/4.jpg')">
+                        &nbsp;
+                    </div>
 
-            <div class="columns content">
-              <div class="content-container">
-                <h5>Bouquets</h5>
-                <p>Starting at $20.00</p>
-              </div>
-            </div>
-          </div>
+                    <div class="columns content">
+                        <div class="content-container">
+                            <h5>Bouquets</h5>
+                            <p>Starting at $20.00</p>
+                        </div>
+                    </div>
+                </div>
 
-          <hr />
+                <hr />
 
-          <div class="arrangements-container">
-            <div class="columns content">
-              <div class="content-container">
-                <h5>Arrangements</h5>
-                <p>Starting at $50.00</p>
-              </div>
-            </div>
-            <div
-              class="columns image"
-              style="background-image: url('images/5.jpg')"
-            >
-              &nbsp;
-            </div>
-          </div>
+                <div class="arrangements-container">
+                    <div class="columns content">
+                        <div class="content-container">
+                            <h5>Arrangements</h5>
+                            <p>Starting at $50.00</p>
+                        </div>
+                    </div>
+                    <div class="columns image" style="background-image: url('images/5.jpg')">
+                        &nbsp;
+                    </div>
+                </div>
 
-          <hr />
+                <hr />
 
-          <div class="arrangements-container">
-            <div
-              class="columns image"
-              style="background-image: url('images/6.jpg')"
-            >
-              &nbsp;
+                <div class="arrangements-container">
+                    <div class="columns image" style="background-image: url('images/6.jpg')">
+                        &nbsp;
+                    </div>
+                    <div class="columns content">
+                        <div class="content-container">
+                            <h5>Custom Orders</h5>
+                            <p>Create Your Own</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="columns content">
-              <div class="content-container">
-                <h5>Custom Orders</h5>
-                <p>Create Your Own</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
 
     <!-- faqs section -->
     <div id="faqs">
-      <h1>FAQS</h1>
-      <h2>Here's some of our frequantly asked questions.</h2>
-      <br />
-      <div>
-        <button class="questions">What is your Delivery Area?</button>
-        <div class="questions_content">
-          <p>
-            <br />Our shop locally serves the following cities and surrounding
-            areas:
-          </p>
-          <br />
-          <ul>
-            <li>Kitchener</li>
-            <li>Waterloo</li>
-          </ul>
-          <p></p>
-          <br />
+        <h1>FAQS</h1>
+        <h2>Here's some of our frequantly asked questions.</h2>
+        <br />
+        <div>
+            <button class="questions">What is your Delivery Area?</button>
+            <div class="questions_content">
+                <p>
+                    <br />Our shop locally serves the following cities and surrounding areas:
+                </p>
+                <br />
+                <ul>
+                    <li>Kitchener</li>
+                    <li>Waterloo</li>
+                </ul>
+                <p></p>
+                <br />
+            </div>
         </div>
-      </div>
 
-      <div>
-        <button class="questions">How can I pay?</button>
-        <div class="questions_content">
-          <p>
-            <br />We accept the following payment types: Visa, Mastercard, AMEX,
-            ApplaPay, and Doubloons.
-          </p>
-          <br />
+        <div>
+            <button class="questions">How can I pay?</button>
+            <div class="questions_content">
+                <p>
+                    <br />We accept the following payment types: Visa, Mastercard, AMEX, ApplaPay, and Doubloons.
+                </p>
+                <br />
+            </div>
         </div>
-      </div>
 
-      <div>
-        <button class="questions">Are your flowers real?</button>
-        <div class="questions_content">
-          <p><br />Maybe.</p>
-          <br />
+        <div>
+            <button class="questions">Are your flowers real?</button>
+            <div class="questions_content">
+                <p><br />Maybe.</p>
+                <br />
+            </div>
         </div>
-      </div>
 
-      <div>
-        <button class="questions">What is your privacy policy?</button>
-        <div class="questions_content">
-          <p><br />¯\_(ツ)_/¯</p>
-          <br />
+        <div>
+            <button class="questions">What is your privacy policy?</button>
+            <div class="questions_content">
+                <p><br />¯\_(ツ)_/¯</p>
+                <br />
+            </div>
         </div>
-      </div>
     </div>
-  </body>
+</body>
 
-  <footer class="footerholder">
+<footer class="footerholder">
     <div class="mapouter">
-      <div class="gmap_canvas">
-        <iframe
-          width="390"
-          height="245"
-          id="gmap_canvas"
-          src="https://maps.google.com/maps?q=108%20University%20Ave,%20Waterloo,%20ON%20N2J%202W2,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          frameborder="0"
-          scrolling="no"
-          marginheight="0"
-          marginwidth="0"
-        ></iframe>
-      </div>
+        <div class="gmap_canvas">
+            <iframe width="390" height="245" id="gmap_canvas" src="https://maps.google.com/maps?q=108%20University%20Ave,%20Waterloo,%20ON%20N2J%202W2,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
     </div>
 
     <table id="footer-info-tbl">
-      <tr>
-        <th>Location</th>
-        <th>Store Hours</th>
-      </tr>
-      <tr>
-        <td>
-          108 University Ave<br />
-          Waterloo,ON N2J 2W2
-        </td>
-        <td>
-          Mon- Fri: 8am To 6pm<br />
-          Sat: 9am To 4pm<br />
-          Sun: Close
-        </td>
-      </tr>
-      <tr>
-        <th>Contact Us</th>
-      </tr>
-      <tr>
-        <td>+1 2234890600</td>
-      </tr>
+        <tr>
+            <th>Location</th>
+            <th>Store Hours</th>
+        </tr>
+        <tr>
+            <td>
+                108 University Ave<br /> Waterloo,ON N2J 2W2
+            </td>
+            <td>
+                Mon- Fri: 8am To 6pm<br /> Sat: 9am To 4pm<br /> Sun: Close
+            </td>
+        </tr>
+        <tr>
+            <th>Contact Us</th>
+        </tr>
+        <tr>
+            <td>+1 2234890600</td>
+        </tr>
     </table>
 
     <div class="snd-section">
-      <div id="newsletter">
-        <div class="container">
-          <div class="left">
-            <h3>Join Our Newsletter!</h3>
-          </div>
-          <form>
-            <input
-              type="text"
-              class="newsletteremail"
-              name="email"
-              placeholder=" Your Email"
-            />
-            <input type="submit" class="newsletterbtn" value="Subscribe" />
-          </form>
-          <ul class="socials">
-            <li>
-              <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-          </ul>
+        <div id="newsletter">
+            <div class="container">
+                <div class="left">
+                    <h3>Join Our Newsletter!</h3>
+                </div>
+                <form>
+                    <input type="text" class="newsletteremail" name="email" placeholder=" Your Email" />
+                    <input type="submit" class="newsletterbtn" value="Subscribe" />
+                </form>
+                <ul class="socials">
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </div>
 
-    <div class="copyright"><p>&copy; 2022 Geranium Co. by Group 2</p></div>
-  </footer>
+    <div class="copyright">
+        <p>&copy; 2022 Geranium Co. by Group 2</p>
+    </div>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
+
 </html>
